@@ -1,20 +1,20 @@
 # Unified CI Evidence Bundle
 
-> Generated: 2026-05-02T00:53:22Z
-> Git ref: c21e340d4
-> CI run: local-20260502T005322Z
-> Verdict: **COMPLETE**
+> Generated: 2026-09-07T13:12:55Z
+> Git ref: 490bd4d0
+> CI run: 34125510711
+> Verdict: **INSUFFICIENT**
 
 ## Summary
 
 | Metric | Value |
 |--------|-------|
 | Total sections | 28 |
-| Present | 28 |
-| Missing | 0 |
-| Invalid | 0 |
-| Total artifacts | 2003 |
-| Total size | 181029.6 KB |
+| Present | 17 |
+| Missing | 10 |
+| Invalid | 1 |
+| Total artifacts | 92 |
+| Total size | 773.9 KB |
 | Required present | 11/11 |
 
 ## Conformance (6)
@@ -23,29 +23,29 @@
 |---------|--------|-------|------|------|
 | Extension conformance summary | PASS | 1 | 1058 B | `tests/ext_conformance/reports/conformance_summary.json` |
 | Conformance baseline | PASS | 1 | 28710 B | `tests/ext_conformance/reports/conformance_baseline.json` |
-| Conformance event log | PASS | 1 | 223530 B | `tests/ext_conformance/reports/conformance_events.jsonl` |
+| Conformance event log | MISS | 0 | 0 B | `tests/ext_conformance/reports/conformance_events.jsonl` |
 | Conformance report (Markdown) | PASS | 1 | 48168 B | `tests/ext_conformance/reports/CONFORMANCE_REPORT.md` |
-| Regression gate verdict | PASS | 1 | 1658 B | `tests/ext_conformance/reports/regression_verdict.json` |
-| Conformance trend data | PASS | 1 | 3075 B | `tests/ext_conformance/reports/conformance_trend.jsonl` |
+| Regression gate verdict | MISS | 0 | 0 B | `tests/ext_conformance/reports/regression_verdict.json` |
+| Conformance trend data | MISS | 0 | 0 B | `tests/ext_conformance/reports/conformance_trend.jsonl` |
 
 ## Diagnostics (8)
 
 | Section | Status | Files | Size | Path |
 |---------|--------|-------|------|------|
-| Must-pass gate verdict | PASS | 1 | 1206 B | `tests/ext_conformance/reports/gate/must_pass_gate_verdict.json` |
-| Must-pass gate event log | PASS | 1 | 56814 B | `tests/ext_conformance/reports/gate/must_pass_events.jsonl` |
-| Per-extension failure dossiers | PASS | 34 | 140366 B | `tests/ext_conformance/reports/dossiers` |
-| Health & regression delta report | PASS | 3 | 88320 B | `tests/ext_conformance/reports/health_delta` |
-| Provider compatibility matrix | PASS | 753 | 375207 B | `tests/ext_conformance/reports/provider_compat` |
-| Sharded extension matrix reports | PASS | 12 | 280518 B | `tests/ext_conformance/reports/sharded` |
+| Must-pass gate verdict | PASS | 1 | 1197 B | `tests/ext_conformance/reports/gate/must_pass_gate_verdict.json` |
+| Must-pass gate event log | PASS | 1 | 54712 B | `tests/ext_conformance/reports/gate/must_pass_events.jsonl` |
+| Per-extension failure dossiers | MISS | 0 | 0 B | `tests/ext_conformance/reports/dossiers` |
+| Health & regression delta report | PASS | 3 | 88533 B | `tests/ext_conformance/reports/health_delta` |
+| Provider compatibility matrix | MISS | 0 | 0 B | `tests/ext_conformance/reports/provider_compat` |
+| Sharded extension matrix reports | MISS | 0 | 0 B | `tests/ext_conformance/reports/sharded` |
 | Extension journey report | PASS | 1 | 14742 B | `tests/ext_conformance/reports/journeys/journey_report.json` |
-| Auto-repair summary | PASS | 1 | 52577 B | `tests/ext_conformance/reports/auto_repair_summary.json` |
+| Auto-repair summary | MISS | 0 | 0 B | `tests/ext_conformance/reports/auto_repair_summary.json` |
 
 ## E2e (1)
 
 | Section | Status | Files | Size | Path |
 |---------|--------|-------|------|------|
-| E2E test results | PASS | 1176 | 183247322 B | `tests/e2e_results` |
+| E2E test results | PASS | 74 | 256474 B | `tests/e2e_results` |
 
 ## Quarantine (2)
 
@@ -61,9 +61,9 @@
 | Performance budget summary | PASS | 1 | 7697 B | `tests/perf/reports/budget_summary.json` |
 | PERF-3X comparison report | PASS | 1 | 6350 B | `tests/perf/reports/perf_comparison.json` |
 | PERF-3X parameter sweeps report | PASS | 1 | 1076 B | `tests/perf/reports/parameter_sweeps.json` |
-| PERF-3X stress triage report | PASS | 1 | 4575 B | `tests/perf/reports/stress_triage.json` |
-| Extension load-time benchmark | PASS | 1 | 17566 B | `tests/ext_conformance/reports/load_time_benchmark.json` |
-| PERF-3X lineage coherence contract | PASS | 0 | 0 B | `tests/ext_conformance/reports/gate/must_pass_gate_verdict.json | tests/ext_conformance/reports/conformance_summary.json | tests/perf/reports/stress_triage.json` |
+| PERF-3X stress triage report | PASS | 1 | 4572 B | `tests/perf/reports/stress_triage.json` |
+| Extension load-time benchmark | MISS | 0 | 0 B | `tests/ext_conformance/reports/load_time_benchmark.json` |
+| PERF-3X lineage coherence contract | WARN | 0 | 0 B | `tests/ext_conformance/reports/gate/must_pass_gate_verdict.json | tests/ext_conformance/reports/conformance_summary.json | tests/perf/reports/stress_triage.json` |
 
 ## Security (2)
 
@@ -82,6 +82,31 @@
 
 | Section | Status | Files | Size | Path |
 |---------|--------|-------|------|------|
-| Extension inventory | PASS | 1 | 89349 B | `tests/ext_conformance/reports/inventory.json` |
-| Extension inclusion manifest | PASS | 4 | 405318 B | `tests/ext_conformance/reports/inclusion_manifest` |
+| Extension inventory | MISS | 0 | 0 B | `tests/ext_conformance/reports/inventory.json` |
+| Extension inclusion manifest | MISS | 0 | 0 B | `tests/ext_conformance/reports/inclusion_manifest` |
+
+## Missing / Invalid Sections
+
+- **Conformance event log** (missing): File not found
+  Path: `tests/ext_conformance/reports/conformance_events.jsonl`
+- **Regression gate verdict** (missing): File not found
+  Path: `tests/ext_conformance/reports/regression_verdict.json`
+- **Conformance trend data** (missing): File not found
+  Path: `tests/ext_conformance/reports/conformance_trend.jsonl`
+- **Per-extension failure dossiers** (missing): Directory not found
+  Path: `tests/ext_conformance/reports/dossiers`
+- **Provider compatibility matrix** (missing): Directory not found
+  Path: `tests/ext_conformance/reports/provider_compat`
+- **Sharded extension matrix reports** (missing): Directory not found
+  Path: `tests/ext_conformance/reports/sharded`
+- **Auto-repair summary** (missing): File not found
+  Path: `tests/ext_conformance/reports/auto_repair_summary.json`
+- **Extension load-time benchmark** (missing): File not found
+  Path: `tests/ext_conformance/reports/load_time_benchmark.json`
+- **Extension inventory** (missing): File not found
+  Path: `tests/ext_conformance/reports/inventory.json`
+- **Extension inclusion manifest** (missing): Directory not found
+  Path: `tests/ext_conformance/reports/inclusion_manifest`
+- **PERF-3X lineage coherence contract** (invalid): PERF-3X lineage span exceeds 14 days for run_id '34125510711' (oldest=2026-05-02 00:53:26 UTC, newest=2026-09-07 13:12:54 UTC)
+  Path: `tests/ext_conformance/reports/gate/must_pass_gate_verdict.json | tests/ext_conformance/reports/conformance_summary.json | tests/perf/reports/stress_triage.json`
 

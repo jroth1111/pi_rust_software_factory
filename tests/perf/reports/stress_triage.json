@@ -21,8 +21,8 @@
     ],
     "rss_interval_secs": 5
   },
-  "correlation_id": "local-20260501T0324",
-  "generated_at": "2026-05-01T03:28:52Z",
+  "correlation_id": "weekly-34125510711",
+  "generated_at": "2026-09-07T13:12:54Z",
   "pass": true,
   "results": {
     "error_count": 0,
@@ -30,16 +30,16 @@
     "extensions_loaded": 15,
     "latency": {
       "ok": true,
-      "p99_first_us": 508,
-      "p99_last_us": 628,
+      "p99_first_us": 191,
+      "p99_last_us": 194,
       "summary": {
         "count": 1500,
-        "max": 3442,
-        "mean": 234,
-        "min": 77,
-        "p50": 195,
-        "p95": 462,
-        "p99": 576
+        "max": 315,
+        "mean": 104,
+        "min": 64,
+        "p50": 100,
+        "p95": 155,
+        "p99": 194
       }
     },
     "reactor": {
@@ -216,12 +216,12 @@
     },
     "rss": {
       "growth_pct": 0.0,
-      "initial_kb": 63160320,
-      "max_kb": 63160320,
+      "initial_kb": 71892992,
+      "max_kb": 71892992,
       "ok": true
     },
     "sample_errors": []
   },
-  "run_id": "local-20260501T0324",
+  "run_id": "weekly-34125510711",
   "schema": "pi.ext.stress_triage.v1"
 }

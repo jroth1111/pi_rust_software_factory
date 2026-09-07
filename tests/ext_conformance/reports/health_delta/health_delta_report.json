@@ -1,7 +1,7 @@
 {
   "schema": "pi.ext.health_delta.v1",
-  "generated_at": "2026-05-01T04:10:28.479Z",
-  "baseline_path": "/data/projects/pi_agent_rust/tests/ext_conformance/reports/conformance_baseline.json",
+  "generated_at": "2026-09-07T13:12:21.831Z",
+  "baseline_path": "/home/runner/work/pi_rust_software_factory/pi_rust_software_factory/tests/ext_conformance/reports/conformance_baseline.json",
   "baseline_date": "2026-02-07T23:31:53Z",
   "current_summary": {
     "failed": 3,
@@ -514,7 +514,7 @@
       "tier": 3,
       "delta_type": "new_failure",
       "current_status": "fail",
-      "failure_reason": "Load error: Extension error: Error loading module '/tmp/pi-async-subagent-results': host write denied: path outside extension root\n    at checkWriteAccess (node:fs:32:47)\n    at mkdirSync (node:fs:572:29)\n    at registerSubagentExtension (/data/projects/pi_agent_rust/tests/ext_conformance/artifacts/community/nicobailon-subagents/index.ts:29:18)\n    at __pi_load_extension (eval_script:472:20)\n"
+      "failure_reason": "Load error: Extension error: Error loading module '/tmp/pi-async-subagent-results': host write denied: path outside extension root\n    at checkWriteAccess (node:fs:32:47)\n    at mkdirSync (node:fs:572:29)\n    at registerSubagentExtension (/home/runner/work/pi_rust_software_factory/pi_rust_software_factory/tests/ext_conformance/artifacts/community/nicobailon-subagents/index.ts:29:18)\n    at __pi_load_extension (eval_script:472:20)\n"
     },
     {
       "id": "community/ogulcancelik-ghostty-theme-sync",
@@ -1437,7 +1437,7 @@
       "delta_type": "unchanged_fail",
       "current_status": "fail",
       "baseline_status": "fail",
-      "failure_reason": "Load error: Extension error: Error loading module '/data/tmp/pi_agent_rust_cargo/codex-evidence-030/tmp/pi-processes-1777608581425': host write denied: path outside extension root\n    at checkWriteAccess (node:fs:32:47)\n    at mkdirSync (node:fs:572:29)\n    at ProcessManager (/data/projects/pi_agent_rust/tests/ext_conformance/artifacts/npm/aliou-pi-processes/manager.ts:17:19)\n    at default (/data/projects/pi_agent_rust/tests/ext_conformance/artifacts/npm/aliou-pi-processes/index.ts:14:25)\n    at __pi_load_extension (eval_script:472:20)\n",
+      "failure_reason": "Load error: Extension error: Error loading module '/tmp/pi-agent-rust-tmp/pi-processes-1788786727847': host write denied: path outside extension root\n    at checkWriteAccess (node:fs:32:47)\n    at mkdirSync (node:fs:572:29)\n    at ProcessManager (/home/runner/work/pi_rust_software_factory/pi_rust_software_factory/tests/ext_conformance/artifacts/npm/aliou-pi-processes/manager.ts:17:19)\n    at default (/home/runner/work/pi_rust_software_factory/pi_rust_software_factory/tests/ext_conformance/artifacts/npm/aliou-pi-processes/index.ts:14:25)\n    at __pi_load_extension (eval_script:472:20)\n",
       "baseline_failure_reason": "Extension uses relative imports to unbundled sibling/parent modules."
     },
     {
