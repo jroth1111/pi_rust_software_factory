@@ -1,8 +1,8 @@
 {
   "schema": "pi.dropin.certification_verdict.v1",
-  "git_commit": "7ea3298ba1a97cc2b3689b64ed8dd786308da5a3",
-  "generated_at_utc": "2026-05-01T06:01:22Z",
-  "overall_verdict": "CERTIFIED",
+  "git_commit": "490bd4d03743363f5de87f73d56526b24e2b807a",
+  "generated_at_utc": "2026-09-07T13:12:57Z",
+  "overall_verdict": "NOT_CERTIFIED",
   "hard_gate_results": [
     {
       "gate_id": "non_mock_unit",
@@ -30,17 +30,17 @@
     },
     {
       "gate_id": "ext_provider_compat",
-      "status": "pass",
+      "status": "skip",
       "blocking": false,
-      "detail": null,
+      "detail": "Artifact not found: tests/ext_conformance/reports/provider_compat/provider_compat_report.json",
       "artifact_path": "tests/ext_conformance/reports/provider_compat/provider_compat_report.json",
       "bead": "bd-1f42.4.6"
     },
     {
       "gate_id": "evidence_bundle",
-      "status": "pass",
+      "status": "fail",
       "blocking": false,
-      "detail": null,
+      "detail": "summary.verdict = 'insufficient' (expected one of: [\"complete\", \"partial\"])",
       "artifact_path": "tests/evidence_bundle/index.json",
       "bead": "bd-1f42.6.8"
     },
@@ -54,9 +54,9 @@
     },
     {
       "gate_id": "conformance_regression",
-      "status": "pass",
+      "status": "fail",
       "blocking": true,
-      "detail": null,
+      "detail": "Artifact not found: tests/ext_conformance/reports/regression_verdict.json; fail-closed policy: blocking gates cannot remain in skip state",
       "artifact_path": "tests/ext_conformance/reports/regression_verdict.json",
       "bead": "bd-1f42.4"
     },
@@ -165,7 +165,9 @@
       "bead": "bd-1f42.8.8.1"
     }
   ],
-  "blocking_reasons": [],
+  "blocking_reasons": [
+    "conformance_regression:fail (Artifact not found: tests/ext_conformance/reports/regression_verdict.json; fail-closed policy: blocking gates cannot remain in skip state)"
+  ],
   "evidence_index": [
     {
       "path": "docs/non-mock-rubric.json",
@@ -181,7 +183,7 @@
     },
     {
       "path": "tests/ext_conformance/reports/provider_compat/provider_compat_report.json",
-      "exists": true
+      "exists": false
     },
     {
       "path": "tests/evidence_bundle/index.json",
@@ -193,7 +195,7 @@
     },
     {
       "path": "tests/ext_conformance/reports/regression_verdict.json",
-      "exists": true
+      "exists": false
     },
     {
       "path": "tests/ext_conformance/reports/conformance_summary.json",
@@ -250,7 +252,7 @@
   ],
   "source": {
     "certification_lane_artifact": "tests/full_suite_gate/certification_verdict.json",
-    "lane_verdict": "pass",
-    "lane_generated_at": "2026-05-01T06:00:46.624Z"
+    "lane_verdict": "fail",
+    "lane_generated_at": "2026-09-07T13:12:57.382Z"
   }
 }
